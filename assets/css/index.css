@@ -55,7 +55,7 @@ nav p a:hover{
 }
 .nav-icons{
     display: flex;
-    width: 17%;
+    width: 20%;
     justify-content: space-between;
     gap: 20px;
 }
@@ -510,7 +510,7 @@ span{
         display: none;
     }
     .nav-icons{
-        width: 40%;
+        width: 50%;
         justify-content: space-around;
         height: 100%;
         align-items: center;
