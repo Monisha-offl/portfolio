@@ -12,7 +12,7 @@
 }
 .nav{
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,7 +38,7 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     width: 40%;
-    font-size: 18px;
+    font-size: 22px;
 }
 .home-nav{
     color: #FFB400;
@@ -64,7 +64,7 @@ nav p a:hover{
     color: #DDDDDD;
     border: none;
     border-radius:12px;
-    font-size: 23px;
+    font-size: 27px;
     padding: 8px;
 }
 .menu{
@@ -89,7 +89,7 @@ nav p a:hover{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 60px 70px 0 70px;
+    padding: 80px 70px 0 70px;
 }
 .para{
     width: 50%;
@@ -151,10 +151,12 @@ nav p a:hover{
     color: black;
 }
 .photo{
-    width: 80%;
+    width: 100%;
     border: solid;
-    border-radius: 20px;
+    border-radius: 35px;
     object-fit: cover;
+    /* border-radius: 80px 5px 80px 5px; */
+    border: 5px solid #bebebb;
 }
 span{
     color: #DDDDDD;
@@ -363,7 +365,7 @@ span{
     background-color: #111111;
     width: 100%;
     height: 100%;
-    padding: 60px 0;
+    padding: 40px 0 100px 0;
 }
 .contact-h{
     width: 100%;
@@ -460,6 +462,7 @@ span{
     width: 230px;
     height: 40px;
     padding:15px;
+    color: #DDDDDD;
 }
 .input-box{
     display: flex;
@@ -475,6 +478,7 @@ span{
     border-radius: 30px;
     background-color: #2B2A2A;
     padding:15px;
+    color: #DDDDDD;
 }
 .input-box input{
     background-color: #2B2A2A;
@@ -508,7 +512,6 @@ span{
     .nav-icons{
         width: 40%;
         justify-content: space-around;
-        padding-right: 20px;
         height: 100%;
         align-items: center;
     }
@@ -557,16 +560,22 @@ span{
         height: 250px;
     }
     .about-content{
-        flex-direction: column;
         font-size: 20px;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
+        width: 100%;
     }
     .bio{
         flex-direction: column;
         gap: 70px;
     }
+    .bio1{
+        width: 45%;
+    }
+    .bio2{
+        width: 45%;
+    }
     .skills{
-        width: 70%;
+        width: 100%;
     }
     .skill-headers{
         font-size: 20px;
@@ -623,8 +632,9 @@ span{
     }
     .nav{
         height: 100px;
-        padding: 0px 30px 0 20px;
+        padding: 0px 50px 0 20px;
         margin: 0;
+        width: 100%;
     }
     .nav-list{
         display: none;
@@ -765,6 +775,12 @@ span{
     }
     .input-box textarea{
         height: 105px;
+    }
+    .input-details input::placeholder{
+        font-size: 10px;
+    }
+    .input-box textarea::placeholder{
+        font-size: 10px;
     }
 
 }
