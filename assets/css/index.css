@@ -17,6 +17,15 @@
     align-items: center;
     justify-content: space-between;
     font-weight: 400;
+    animation: navbar;
+    animation-duration: 1s;
+}
+@keyframes navbar{
+    from{
+        transform: translatey(-200px);
+    }to{
+        transform: translate(0);
+    }
 }
 .logo{
     height: 200px;
@@ -90,6 +99,15 @@ nav p a:hover{
     width: 100%;
     justify-content: space-between;
     padding: 25px 70px 0 70px;
+    animation: intro-animation;
+    animation-duration: 1s;
+}
+@keyframes intro-animation{
+    from{
+        transform: translate(-300px);
+    }to{
+        transform: translate(0);
+    }
 }
 .para{
     width: 50%;
@@ -351,6 +369,15 @@ span{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    animation: grid-animation;
+    animation-duration: 1s;
+}
+@keyframes grid-animation{
+    from{
+        transform: scale(70%);
+    }to{
+        transform: scale(100%);
+    }
 }
 .product img{
     width: 100%;
@@ -509,14 +536,13 @@ span{
     }
     .nav{
         margin-bottom: 35px;
-        padding: 0 20px;
+        padding: 0 25px 0 20px;
     }
     .nav-list{
         display: none;
     }
     .nav-icons{
-        width: 50%;
-        justify-content: space-around;
+        width: 40%;
         height: 100%;
         align-items: center;
     }
@@ -528,7 +554,7 @@ span{
         display: block;
         font-size: 35px;
         background-color: #2B2A2A;
-       color: #DDDDDD;
+        color: #DDDDDD;
         border: none;
         border-radius:12px;
         font-size: 23px;
@@ -635,6 +661,7 @@ span{
     }
     .logo{
         height: 120px;
+        width: 35%;
     }
     .nav{
         height: 100px;
@@ -645,8 +672,13 @@ span{
     .nav-list{
         display: none;
     }
+    .nav-icons{
+        width: 55%;
+    }
     .nav-icons i{
         font-size: 15px;
+        display: flex;
+        gap: 0;
     }
     .intro{
         width: 80%;
